@@ -1,0 +1,183 @@
+:root {
+    --color-white: rgb(226,226,226);
+    --color-white-background: rgb(226,226,226, 0.3);
+    --color-background: #5d4954;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    border: red solid 1px;
+    flex-direction: column;
+}
+
+/* .intro-section {
+    margin-top: 5.5vh;
+} */
+
+/* intro */
+img {
+
+    width: 100%;
+    max-height: 1300px;
+
+
+    
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5.5vh;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color-white-background);
+
+    /* fixes the navbar */
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.logo {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    transform: translateX(0px);
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+
+    .nav-links {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 5.5vh;
+        background: var(--color-white-background);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100vw);
+        animation: navSlideOut 0s forwards;
+    }
+
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        animation: navSlide 0.5s ease both;
+    }
+    
+    .nav-off {
+    animation: navSlideOut 0.5s ease both;
+    }
+}
+
+
+
+@keyframes navSlide {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+}
+  
+@keyframes navSlideOut {
+
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+}
+  
+@keyframes navFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.class {
+    margin-top: 200px;
+}
