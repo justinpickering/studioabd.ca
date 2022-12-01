@@ -1,6 +1,6 @@
 :root {
     --color-white: white;
-    --color-white-background: rgba(245, 245, 245, 0.8);
+    --color-white-background: rgba(245, 245, 245, 0.95);
     --color-background: #5d4954;
 }
 
@@ -13,6 +13,8 @@
 
 html {
     font-size: 18px;
+    font-family: 'League Spartan', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 body {
@@ -20,9 +22,7 @@ body {
     flex-direction: column;
 }
 
-/* .intro-section {
-    margin-top: 5.5vh;
-} */
+
 
 /* intro */
 #intro {
@@ -35,15 +35,19 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #4b4642;
+    
 }
 
 .intro-section img {
 
     width: 100%;
-    height: 60rem;
+    height: 50rem;
     object-fit: cover;
 }
+
 
 /* info section */
 
@@ -57,15 +61,83 @@ body {
     text-align-last: center;
     gap: 2rem;
     background: white;
-    padding: 1rem;
+    padding: 1rem 3rem 1rem 3rem;    
 }
 
 .info-section p {
-    max-width: 40rem;
+    max-width: 50rem;
+    font-size: 1.2rem;
+}
+
+
+.info-section button {
+    padding: 1rem 1.75rem 1rem 1.75rem;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    background-color: #eddcd2;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 /* instagram section */
 
+.instagram-section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #f5f3f4;
+    padding: 3rem;
+ 
+}
+
+.instagram-section #instagram-text {
+    font-size: 1.5rem;
+    color: #4b4642;
+    text-align: center;
+}
+
+.instagram-section .instagram-posts {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.insta-post {
+    width: 25%;
+    padding: 1rem;
+
+}
+
+.insta-post img {
+    width: 100%;
+    max-width: 25rem;
+    cursor: pointer;
+}
+
+.instagram-button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+.material-symbols-outlined {
+    
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' -25,
+  'opsz' 20
+}
 
 
 
@@ -75,7 +147,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 5.5vh;
-    font-family: 'Montserrat', sans-serif;
     background: var(--color-white-background);
     
     /* allows navbar to stay stickied at top when position relative the below image */
@@ -84,6 +155,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    
 }
 
 
@@ -92,7 +164,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
-
+    font-family: 'Adamina', serif;
 }
 
 h4 {
@@ -100,6 +172,7 @@ h4 {
 }
 
 .nav-links {
+    
     display: flex;
     justify-content: space-around;
     width: 30%;
@@ -108,8 +181,7 @@ h4 {
 
 .nav-links a {
     text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
 }
 
@@ -131,6 +203,13 @@ h4 {
     .nav-links {
         width: 45%;
     }
+
+    .instagram-section {
+
+        padding: 2rem 0.2rem 1rem 0.2rem;
+     
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -147,11 +226,17 @@ h4 {
         background: var(--color-white-background);
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        gap: 80px;
         align-items: center;
         width: 50%;
         transform: translateX(100vw);
         animation: navSlideOut 0s forwards;
+    }
+
+    .instagram-section {
+        padding: 2rem 0.2rem 1rem 0.2rem;
+     
     }
 
 

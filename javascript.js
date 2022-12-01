@@ -44,7 +44,6 @@
 
 
 
-
 const navSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav-links");
@@ -84,3 +83,10 @@ const navSlide = () => {
 }
 
 navSlide();
+
+function instaLink() {
+
+    let url = "https://www.instagram.com/studioabdesigns/"
+    window.open(url, '_blank').focus();
+    
+}
