@@ -46,8 +46,49 @@ a:hover {
     font-weight: 300;
     opacity: 75%;
     font-family: var(--ff-secondary);
-    
+  
 }
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+
+.intro-animation {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+
+.intro-animation:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.intro-animation:nth-child(2) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.intro-animation:nth-child(3) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.intro-animation:nth-child(4) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.intro-animation:nth-child(5) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+
 
 .intro-section img {
 
