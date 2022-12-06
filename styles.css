@@ -383,7 +383,7 @@ h4 {
     text-align: center;
 }
 
-.footer-left {
+.footer-center {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
