@@ -164,6 +164,7 @@ a:hover {
     text-align: center;
 }
 
+
 .instagram-section .instagram-posts {
 
     display: flex;
@@ -213,6 +214,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1.25rem;
     height: 5.5vh;
     background: var(--color-white-background);
     
@@ -231,7 +233,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
-    font-family: var(--ff-logo)
+    font-family: var(--ff-logo);
 }
 
 h4 {
