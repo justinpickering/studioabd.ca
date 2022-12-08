@@ -2,6 +2,7 @@
     --color-white: white;
     --color-white-background: rgba(245, 245, 245, 0.95);
     --color-dark-background: #f5f3f4;
+    --color-brown-header: #a58c74;
 
     --ff-logo: 'Adamina', serif;
     --ff-primary: 'League Spartan', sans-serif;  
@@ -30,6 +31,13 @@ a:hover {
     opacity: 80%;
 
 }
+
+.header {
+    color: var(--color-brown-header);
+    font-family: var(--ff-logo);
+    font-size: 2rem;
+}
+
 
 /* intro */
 #intro {
@@ -160,8 +168,8 @@ a:hover {
 
 .instagram-section #instagram-text {
     font-size: 1.5rem;
-    color: #4b4642;
     text-align: center;
+    color: var(--color-brown-header);
 }
 
 
@@ -409,7 +417,7 @@ h4 {
 
 .about-header{
     margin-top: 5.5vh;
-    height: 15rem;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -419,17 +427,14 @@ h4 {
 .about-section {
     display: flex;
     flex-direction: column;
-    border: red 2px solid;
     gap: 3rem;
     padding: 2rem 10rem 2rem 10rem;
-
     align-items: center;
     justify-content: center;
 }
 
 .about-container {
     display: flex;
-    border: green 2px solid;
     gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -443,16 +448,79 @@ h4 {
 
 .about-pic img {
     max-width: 100%;
-    width: 35rem;
+    width: 32rem;
 
 }
 
 .about-text-container {
-    width: 35rem;
+    display: flex;
+    gap: 1rem;
+    width: 32rem;
+    flex: column;
+    text-align: center;
 }
 
 .about-text {
     text-align: center;
+    opacity: 80%;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.about-us-name {
+    color: var(--color-brown-header);
+    font-size: 1.75rem;
+}
+
+.about-role {
+    font-size: 1.2rem;
+}
+
+.indent-line {
+    display: flex;
+    justify-content: center;
+}
+
+hr.solid-line {
+    border-top: 2px solid var(--color-brown-header);
+    text-align: center;
+    width: 3rem;
+    opacity: 40%;
+}
+
+
+
+.values-section {
+    background-color: var(--color-dark-background);
+    padding: 2rem 12rem 2rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 50rem;
+    min-width: 20rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+}
+
+.values-header {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.values-text {
+    opacity: 80%;
+    font-weight: 300;
+    font-size: 1.1rem;
 }
 
 @media screen and (max-width:768px) {
@@ -475,7 +543,6 @@ h4 {
     .about-section {
         display: flex;
         flex-direction: column;
-        border: red 2px solid;
         gap: 3rem;
         padding: 1rem 2rem 1rem 2rem;
     
@@ -487,7 +554,6 @@ h4 {
         flex-wrap: wrap-reverse;
     }
     
-
 }
 
 /* .insta-post {
