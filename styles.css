@@ -562,7 +562,6 @@ hr.solid-line {
 .container {
     width: 100%;
     padding: 0 8%;
-    background: var(--color-dark-background);
 }
 
 .row {
