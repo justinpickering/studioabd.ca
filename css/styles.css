@@ -309,6 +309,7 @@ h4 {
         width: 50%;
         transform: translateX(100vw);
         animation: navSlideOut 0s forwards;
+        padding-top: 2rem;
     }
 
     .instagram-section {
@@ -438,26 +439,21 @@ h4 {
     gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+
 }
 
 .about-text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+    width: 32rem;
 }
 
 .about-pic img {
     max-width: 100%;
     width: 32rem;
 
-}
-
-.about-text-container {
-    display: flex;
-    gap: 1rem;
-    width: 32rem;
-    flex: column;
-    text-align: center;
 }
 
 .about-text {
@@ -489,27 +485,35 @@ hr.solid-line {
 }
 
 
-
 .values-section {
     background-color: var(--color-dark-background);
-    padding: 2rem 12rem 2rem 12rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 3rem;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 4rem 2rem 4rem;
 }
 
-.values {
+.values-container {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
-    max-width: 50rem;
-    min-width: 20rem;
+    max-width: 40rem;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
 
+
+}
+
+.value-section {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .values-header {
@@ -522,6 +526,7 @@ hr.solid-line {
     font-weight: 300;
     font-size: 1.1rem;
 }
+
 
 @media screen and (max-width:768px) {
 
@@ -544,15 +549,26 @@ hr.solid-line {
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        padding: 1rem 2rem 1rem 2rem;
+        padding: 2rem;
     
         align-items: center;
         justify-content: center;
     }
 
+    .values-section {
+        background-color: var(--color-dark-background);
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
     .justin {
         flex-wrap: wrap-reverse;
     }
+
     
 }
 
