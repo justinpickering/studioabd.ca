@@ -573,12 +573,17 @@ hr.solid-line {
 
 /* Services Page */
 
+.services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .services-container {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
     padding: 1rem;
 }
 
@@ -639,6 +644,7 @@ hr.solid-line {
     align-items: center;
     justify-content: center;
     background: var(--color-dark-background);
+    width: 100%;
     
 }
 
@@ -673,6 +679,11 @@ hr.solid-line {
     max-width: 100%;
     width: 18rem;
 
+}
+
+.services-button {
+    margin-bottom: 2rem;
+    margin-top: 0;
 }
 
 @media screen and (max-width:469px) {
@@ -782,5 +793,6 @@ hr.solid-line {
      50% { transform: rotate(10.0deg) }
      55% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
-  }
-  
+}
+
+
