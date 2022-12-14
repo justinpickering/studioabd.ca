@@ -140,8 +140,8 @@ a:hover {
 }
 
 
-.info-section button {
-    padding: 1rem 1.75rem 1rem 1.75rem;
+button {
+    padding: 0.8rem 1.5rem;
     border-radius: 0.3rem;
     border: none;
     cursor: pointer;
@@ -204,7 +204,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     align-content: center;
-
+    color: black;
 }
 
 
@@ -638,8 +638,8 @@ hr.solid-line {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
     background: var(--color-dark-background);
+    
 }
 
 .services-quote-container > div {
@@ -687,3 +687,100 @@ hr.solid-line {
     }
     
 }
+
+/* Contact Us Page */
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+    gap: 2.1rem;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 20rem;
+    width: 100%;
+}
+
+.contact-left-text {
+    font-size: 1.2rem;
+    
+}
+
+.contact-left-text p {
+    margin-bottom: 0.4rem;
+}
+
+.contact-left form input, textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    font-family: var(--ff-primary);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+
+.contact-left form {
+
+    position: relative;
+    
+}
+
+.contact-left form button {
+    position: static;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.contact-left form textarea {
+    resize: vertical;
+    height: 8rem;
+}
+
+
+.contact-right img {
+    max-width: 22rem;
+    width: 100%;
+}
+
+.hours {
+    margin-top: 1rem;
+}
+
+.hours p {
+    margin: 0.3rem;
+}
+
+.hours .times {
+    font-weight: 300;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 3.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    color: var(--color-brown-header);
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     55% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
