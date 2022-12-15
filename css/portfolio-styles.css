@@ -29,12 +29,13 @@
     width: calc(100% + 20px);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0);
+    -webkit-transform: translate3d(-3px,0,0);
+    transform: translate3d(-3px,0,0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     opacity: 40%;
-  
+
+
   }
   
   .hovereffect:hover img {
