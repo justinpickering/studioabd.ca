@@ -4,7 +4,7 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
-    max-width: 80rem;
+    max-width: 76rem;
     margin-top: 1rem;
 
 }
