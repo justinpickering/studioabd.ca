@@ -402,7 +402,7 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    box-shadow: 0 50vh 0 50vh rgb(88, 81, 81);
 }
 
 .footer-center {
