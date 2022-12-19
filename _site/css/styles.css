@@ -38,6 +38,12 @@ a:hover {
     font-size: 2rem;
 }
 
+.header-2 {
+    color: var(--color-brown-header);
+    font-family: var(--ff-logo);
+    font-size: 1.5rem;
+}
+
 
 /* intro */
 #intro {
@@ -226,7 +232,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1.25rem;
+    padding: 1.6rem;
     height: 5.5vh;
     background: var(--color-white-background);
     
@@ -426,7 +432,6 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 .about-section {
@@ -479,12 +484,14 @@ h4 {
 .indent-line {
     display: flex;
     justify-content: center;
+
 }
 
 hr.solid-line {
     border-top: 2px solid var(--color-brown-header);
     text-align: center;
     width: 3rem;
+    margin-top: 0.3rem;
     opacity: 40%;
 }
 
@@ -806,7 +813,7 @@ hr.solid-line {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 2.25rem 2rem 2.25rem;
+    padding: 0 1.8rem 2rem 1.8rem;
   
 }
 
@@ -834,17 +841,10 @@ hr.solid-line {
     object-fit:cover;
 }
 
-/* .yes {
-    object-fit: fill;
-}
-
-
-.prototypical .portfolio-image {
-    height: 100%;
-} */
-
 .portfolio-a-tag {
     cursor: pointer;
 }
+
+
 
 
