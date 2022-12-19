@@ -3,19 +3,25 @@
 .selected-gallery {
 
     columns: 2;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    gap: 1rem;
     max-width: 76rem;
+    margin-top: 1rem;
 }
 
 .selected-item img {
    
     width: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
 }
 
 .selected-item {
-    border: 2px red solid;
+    margin-bottom: 0.85rem;
+}
+
+.yes img {
+    width: 35rem;
+    padding: 0;
 }
 
 
