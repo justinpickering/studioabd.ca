@@ -31,6 +31,10 @@
 
 }
 
+.one-column {
+    columns: 1;
+}
+
 
 
 /* Portfolio: Prototypical projects */
@@ -88,6 +92,10 @@
 
 .prototypical-container-dark {
     background: var(--color-dark-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 #evergreen-header {
